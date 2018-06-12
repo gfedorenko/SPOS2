@@ -117,7 +117,7 @@ public class Lexer {
 
                 case RL: {
                     if (character == '<' || character == '=') {
-                        currState = State.DOUBLE_ASSIGN;
+                        currState = State.OPERATOR;
                         analyze = false;
                     } else {
                         tokens.add(new Token(Type.OPERATOR, buffer));
@@ -129,7 +129,7 @@ public class Lexer {
 
                 case LL: {
                     if (character == '>' || character == '=') {
-                        currState = State.DOUBLE_ASSIGN;
+                        currState = State.OPERATOR;
                         analyze = false;
                     } else {
                         tokens.add(new Token(Type.OPERATOR, buffer));

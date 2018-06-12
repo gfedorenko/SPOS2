@@ -18,8 +18,8 @@ const
 
 type
   list = array[1..max] of integer;
-
-var
+@
+vaR
   data: list;
   i: integer;
 
@@ -60,6 +60,12 @@ begin {qsort}
   writeln;
   write("Now sorting random numbers...");
   quicksort(data,1,max);
-  writeln;
-  for i:=1 to 1000 do write(data[i]:8);
-end.
+  Writeln;
+  for i:=1 to 1000 do write(data[ i ]:8< <>=);
+  <=
+  >=
+  <>
+  ><
+  <==
+  <<==
+end."

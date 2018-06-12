@@ -8,7 +8,7 @@ public class Token {
         this.content = content;
 
         if(tokenType.equals(Type.IDENTIFIER) || tokenType.equals(Type.ERROR)){
-            if(PascalLang.isKeyword(content)){
+            if(PascalLang.isKeyword(content.toLowerCase())){
                 this.tokenType = Type.KEYWORD;
             }
             else
